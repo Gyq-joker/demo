@@ -1,0 +1,216 @@
+body{
+	background-color: #f6f6f6;
+}
+.top_nav{
+	background-color: white;
+	border-bottom: 4px solid #ff464e;
+}
+.nav_box{
+	position: relative;
+	margin: 0 auto;
+	width: 980px;
+	height: 76px;
+	background-color: whtie;
+}
+.nav_left{
+	position: relative;
+	display: inline-block;
+	margin-top: 13px;
+	width: 210px;
+	height: 56px;
+	background: transparent url(../img/header-total.gif) no-repeat center;
+	background-position: -80px -215px;
+}
+.nav_left>a{
+	position: absolute;
+	width: 210px;
+	height: 56px;
+}
+.nav_right{
+	position: absolute;
+	right: 0;
+	top: 0;bottom: 0;
+	margin: auto;
+	width: 465px;
+	height: 33px;
+	background: transparent url(../img/header-total.gif) no-repeat center;
+	background-position: 0 0;
+}
+.main{
+	width: 100%;
+	height: 100%;
+	background-color: #f6f6f6;
+}
+/*登录界面*/
+.login_box,.login_box1{
+	display: none;
+	margin: 20px auto;
+	width: 980px;
+	height: 445px;
+	background-color: white;
+	border: 1px solid #e2e2e2;
+}
+.box_tit{
+	width: 878px;
+	padding: 20px 50px;
+	border-bottom: 1px solid #e2e2e2;
+	background-color: white;
+}
+.box_tit>span:first-child{color: #FF464E;}
+.box_tit>span:nth-child(2){
+	font-size: 16px;
+	color: #e2e2e2;
+}
+.box_tit>span:nth-child(3){
+	margin-left: 10px;
+	font-size: 12px;
+	color: #666;
+}
+.right_regist{
+	float: right;
+	font-size: 14px;
+}
+.right_regist>span{
+	font-size: 14px;
+	color: #999;
+}
+#regin_a{
+	color: #0289cd;
+}
+.box_left,.box_left1{
+	width: 818px;
+	height: 338px;
+	padding: 30px 80px 0 80px;
+	background-color: white;
+}
+.left_info{
+	display: inline-block;
+	width: 450px;
+	height: 308px;
+	/*background-color: #9C7575;*/
+}
+.use_info,.pass_info{
+	position: relative;
+	outline: none;
+	border: 1px solid #666;
+	margin: 0 auto;
+	display: block;
+	width: 220px;
+	padding: 10px 5px 12px 45px;
+	margin-bottom: 30px;
+}
+.first_use{
+	position: relative;
+}
+.first_pass{
+	position: relative;
+}
+.first_use>i,.first_pass>i{
+	position: absolute;
+	top: 0;
+	left: 90px;
+	width: 40px;
+	height: 40px;
+	background: transparent url(../img/name2.jpg) no-repeat center;
+	z-index: 2;
+}
+.first_pass>i{
+	background: transparent url(../img/code2.jpg) no-repeat center;
+}
+.right_img{
+	float: right;
+}
+.check_box{
+	margin: 0 auto;
+	width: 275px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #5e5e5e;
+}
+.check_box>input:nth-child(1){
+	float: left;
+	margin-top: 4px;
+	margin-right: 5px;
+}
+.check_box>.forget_info{
+	float: right;
+	font-size: 13px;
+	color: #999;
+}
+.getbtn{
+	display: block;
+	outline: none;
+	border: none;
+	margin: 10px auto;
+	width: 275px;
+	height: 40px;
+	background-color: #FF4400;
+	color: white;
+	font-size: 16px;
+}
+.getbtn:hover{
+	cursor: pointer;
+	background-color: #f9622c;
+}
+.udown_info{
+	position: relative;
+	margin: 20px auto;
+	width: 265px;
+	height: 48px;
+}
+.toge_info{
+	display: inline-block;
+	width: 142px;
+	height: 48px;
+}
+.toge_info>p{
+	display: inline-block;
+	font-size: 12px;
+	color: #333;
+}
+.toge_info{
+	position: relative;
+}
+.wet,.webo,.ticon{
+	content: "";
+	position: absolute;
+	top: 30px;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	background: transparent url(../img/new-login.gif) no-repeat center;
+	background-position: -210px -195px;
+}
+.webo{
+	background-position: 0 -170px;
+	left: 32px;
+}
+.ticon{
+	background-position: 0 -141px;
+	left: 62px;
+}
+
+.phone_box{
+	position:absolute;
+	top: 0;bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 122px;
+	height: 22px;
+	/*background-color: #00FFFF;*/
+}
+.phone_box>i{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 12px;
+	height: 22px;
+	background: transparent url(../img/icons-total.gif) no-repeat center;
+	background-position: -28px -249px;
+}
+.phone_box>a{
+	font-size: 14px;
+	position: absolute;
+	left: 15px;
+	color: #666;
+}
