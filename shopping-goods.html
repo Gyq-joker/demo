@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/juanpi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/utils.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goods.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	<body>
+		<div class="body">
+			<!--侧边栏-->
+			<div class="side-box">
+				<ul class="side_ul1">
+					<li class="side_user">
+						<i class="sideicon"></i>
+					</li>
+					<li class="side_shop">
+						<i class="sideicon"></i>
+						<span>0</span>
+					</li>
+					<li class="side_like">
+						<i class="sideicon"></i>
+						<div class="hide_user">
+							<p>我的收藏</p>
+							<i></i>
+						</div>
+					</li>
+					<li class="side_quan">
+						<i class="sideicon"></i>
+						<div class="hide_user">
+							<p>优惠券</p>
+							<i></i>
+						</div>
+					</li>
+					<li class="side_gotop" id="goTop">
+						<i class="sideicon"></i>
+						<div class="hide_user">
+							<p>一键置顶</p>
+							<i></i>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!--吸顶导航-->
+			<div class="side_top_box">
+				<ul class="side_top_ul">
+					<li style="color: #ff464e;">今日上新</li>
+					<li style="color: #eee;">|</li>
+					<li>女装</li>
+					<li>男装</li>
+					<li>鞋子</li>
+					<li>箱包</li>
+					<li>母婴</li>
+					<li>美妆</li>
+					<li>居家</li>
+					<li>家纺</li>
+					<li>文体</li>
+					<li>美食</li>
+					<li>数码</li>
+					<li>电器</li>
+					<li>内衣</li>
+					<li>配饰</li>
+					<li>[即将上线]</li>
+				</ul>
+			</div>
+			
+			
+			<!--顶部菜单栏-->
+			<div class="topNav" style="background-color: #f6f6f6;">
+				<div class="topNav_position">
+					<div class="navBox">
+						<div class="leftNav">
+							<a href="" id="login">登录</a>
+							<a href="" id="register">免费注册</a>
+							<a id="user_isLogin"></a>
+							<a id="user_exit"></a>
+							
+							<span>|</span>
+							<a href="">我的订单</a>
+							<a href="">商家入驻</a>
+						</div>
+						<div class="midNav">
+							<a id="shopack" href="shopcardPage.html">
+								<span class="iconpos"></span>
+								<span>购物袋</span>
+								<span class="iconpos">0</span>
+							</a>
+						</div>
+						<div class="rightNav">
+							<a href="" style="position: relative;">商家中心</a>
+							<a href="">客户服务</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<!--导航栏-->
+			<div class="header_nav">
+				<!--搜索框一栏-->
+				<div class="top_sch">
+					<!--网站标题-->
+					<div class="site_tit isblock">
+						<a href="index.html"></a>
+					</div>
+					<!--网站服务-->
+					<div class="site_mess iconpos"></div>
+					<!--搜索框-->
+					<div class="search search-w isabsolute">
+						<input type="text" class="search-w" id="search" value="请输入想找的宝贝"/>
+						<input type="button" id="smt"/>
+					</div>
+				</div>
+				<!--商品导航-->
+				<div class="shop_nav">
+					<ul class="shop_ul">
+						<li><a>首页</a></li>
+						<li><a>品牌折扣</a></li>
+						<li><a>9.9包邮</a></li>
+						<li><a>明日预告</a></li>
+						<li class="phone_down">
+							<a>手机版</a>
+							<div class="hide_down">
+								<p class="down_code"></p>
+								<p>随时逛 及时抢</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--  商品路径  -->
+			<div class="place-show">
+				<div class="place-show-a">
+					<a href="">首页</a>
+					<i class="right-jt"></i>
+					<a class="goods-name"></a>
+				</div>
+			</div>
+
+			<!--  商品预览图  -->
+			<div class="goods-body">
+				<div class="goods-total-box">
+					<!--  左侧小图预览  -->
+					<ul class="goods-small-box">
+						
+					</ul>
+					
+					<!--大图-->
+					<div class="goods-big-box">
+						<!--放大镜-->
+						<div class="fdj-box"></div>
+						<!--<img src="img/newgoods/59be4064a9fcf845a46f39b3_800x800.jpg" alt="" style="display: inline-block;" class="big-goodsimg"/>
+						<img src="img/newgoods/5a17b91f8150a11b2e12fb65_800x800 (1).jpg" alt="" class="big-goodsimg"/>
+						<img src="img/newgoods/59edbbb0a9fcf82bcf51578f_800x800 (1).jpg" alt="" class="big-goodsimg"/>
+						<img src="img/newgoods/5a17b91b8150a1053864a447_800x800 (1).jpg" alt="" class="big-goodsimg"/>
+						<img src="img/newgoods/59be6315a9fcf882e12d2ebf_800x800 (1).jpg" alt="" class="big-goodsimg"/>
+						<img src="img/newgoods/59be6315a9fcf882e12d2ebf_800x800 (1).jpg" alt="" class="big-goodsimg"/>-->
+					</div>
+					<!--局部放大图-->
+					<div class="fdj-show">
+						<!--<img src="img/newgoods/59be4064a9fcf845a46f39b3_800x800.jpg" alt="" style="display: inline-block;" class="big-goodsimg"/>-->
+					</div>
+						
+					<!--  商品服务信息  -->
+					<div class="bottom-info-txt">
+						<span>100%人工质检</span>
+						<span>全国包邮低价保障</span>
+						<span>7天无理由退货</span>
+					</div>
+					
+					<!--  商品下三个内容  -->
+					<div class="bottom-sector">
+						<a class="collect">收藏</a>
+						<a class="showbtn">分享</a>
+						<a>举报</a>
+					</div>
+				</div>
+				
+				<!--  商品价格以及选项  -->
+				<div class="goods-wrap">
+					<h2></h2>
+					<div class="goods-price-box">
+						<!--价格内容-->
+						<div class="about-price">
+							<!--现价-->
+							<p class="price-a">¥ <span></span></p>
+							<!--原价-->
+							<p class="price-b">参考价：¥<span></span></p>
+							<div class="price-djs">
+								<span>剩余：
+									<em id="d">00</em>天
+									<em id="h">00</em>时
+									<em id="m">00</em>分
+									<em id="s">00</em>秒
+								</span>
+							</div>
+							<p class="price-promo">
+								促销：
+								<!--满减内容-->
+								<span id="promo-img"></span>
+								<!--促销详情-->
+								<span></span>
+								<i>详情</i>
+							</p>
+						</div>
+						<!--城市选择-->
+						<div class="city-box">
+							<span style="color: #999;">配送：</span>
+							<!--发货城市-->
+							<span id="forcity">  </span>
+							<div class="city-sele isblock">
+								<ul>
+									<li>北京市</li>
+									<li>天津市</li>
+									<li>上海市</li>
+									<li>重庆市</li>
+									<li>河北省</li>
+									<li>山西省</li>
+									<li>内蒙古自治区</li>
+									<li>辽宁省</li>
+									<li>吉林省</li>
+									<li>黑龙江省</li>
+									<li>江苏省</li>
+									<li>浙江省</li>
+									<li>安徽省</li>
+									<li>福建省</li>
+									<li>江西省</li>
+									<li>山东省</li>
+									<li>河南省</li>
+									<li>湖北省</li>
+									<li>湖南省</li>
+									<li>广东省</li>
+									<li>广西壮族自治区</li>
+									<li>海南省</li>
+									<li>贵州省</li>
+									<li>四川省</li>
+									<li>云南省</li>
+									<li>西藏自治区</li>
+									<li>陕西省</li>
+									<li>甘肃省</li>
+									<li>青海省</li>
+									<li>宁夏回族自治区</li>
+									<li>新疆维吾尔自治区</li>
+								</ul>
+							</div>
+							<span>包邮，24小时发货</span>
+						</div>
+					</div>
+					
+					<div class="cloth-color">
+						<p>颜色：</p>
+						<ul class="color-sele">
+							<!--<li>
+								<a>
+									<img src="img/newgoods/small1.jpg"/>
+									<span>米白色</span>
+								</a>
+							</li>-->
+						</ul>
+					</div>
+					
+					<!--尺码-->
+					<div class="size-box">
+						<!--尺码字体-->
+						<p>尺码：</p>
+						<ul class="size-sele">
+							<!--<li>
+								<a>
+									<span style="color: #ff464e;">均码</span>
+									<!--<span id="size-nerv">库存紧张</span>
+								</a>
+							</li>-->
+						</ul>
+					</div>
+					
+					<!--商品数量-->
+					<div class="num-box">
+						<p>数量：</p>
+						<div class="num-div">
+							<i class="decrea">-</i>
+							<input type="text" value="1" />
+							<i class="increa">+</i>
+						</div>
+					</div>
+					
+					<!--两个按钮-->
+					<div class="button-box">
+						<!--立即购买-->
+						<a class="now-buy">
+							立即购买
+						</a>
+						
+						<!--加入购物车-->
+						<a class="shopingcar">
+							加入购物车
+							<div class="addshop_ant" style="top: -35px;right: 0px;">+1</div>
+						</a>
+					</div>
+					
+				</div>
+				
+				<!--  店铺详情  -->
+				<div class="store-box">
+					<div class="top-store">
+						<div class="store-img-box">
+							<!--商家头像-->
+							<!--<img src="img/newgoods/59280351ad0a49fe418b458f_180x90.png"/>-->
+						</div>
+						<!--店铺名称-->
+						<p class="store-p1"></p>
+						<!--购买人数-->
+						<p class="store-p2"></p>
+					</div>
+					<div class="icon-box">
+						<div class="store-icon">
+							<img src="img/newgoods/gold.png" alt="" />金牌认证
+						</div>
+						<div class="store-icon">
+							<img src="img/newgoods/bail.png" alt="" />已缴纳保证金
+						</div>
+						<div class="store-icon">
+							<img src="img/newgoods/license.png" alt="" />营业执照
+						</div>
+					</div>
+					<div class="talk-worker">
+						<img src="img/newgoods/license.png" alt="" />联系客服
+					</div>
+				</div>
+			</div>
+			
+			<div class="goods-content">
+				<!--导航-->
+				<ul class="content-ul">
+					<li>
+						<a>商品详情</a>
+					</li>
+					<li>
+						<a>商品规格</a>
+					</li>
+					<li>
+						<a>物流售后</a>
+					</li>
+					<li>
+						<a>消费保障</a>
+					</li>
+					<li disabled="true"></li>
+					<li>
+						<a class="phone-buy">手机购买</a>
+					</li>
+				</ul>
+				
+				<!--整体款式-->
+				<div class="top-goodsinfo">
+					<!--<div class="goods-info-tit">
+						<span>整体款式</span>
+					</div>
+					<div class="goods-des">
+						<img src="img/newgoods/5a17bb808150a107043898ba_790x604.jpg"/>
+						<img src="img/newgoods/59be4064a9fcf845a46f39b3_800x800 (2).jpg"/>
+						<img src="img/newgoods/5a17bb858150a1078c47df0a_750x361.jpg"/>
+						<img src="img/newgoods/5a17bba78150a1057132e96c_750x754.jpg"/>
+						<img src="img/newgoods/5a17bba18150a105a83ec60a_749x751.png" alt="" />
+						<img src="img/newgoods/59e42a27a9fcf807a43ec234_800x800.jpg"/>
+						<img src="img/newgoods/59e42a298150a12a8a70045c_800x800.jpg"/>
+					</div>-->
+					<div class="goods-info-tit" id="total-show">
+						<span></span>
+					</div>
+					<!--展示图片-->
+					<div class="total-showStyle"></div>
+					
+					<div class="goods-info-tit" id="total-make">
+						<span></span>
+					</div>
+					<!--做工图片-->
+					<div class="total-makeStyle">
+						
+					</div>
+					
+					<div class="goods-info-tit" id="total-post">
+						<span></span>
+					</div>
+					<!--实拍图片-->
+					<div class="total-postStyle"></div>
+					
+					<div class="goods-info-tit">
+						<span>参数规格</span>
+					</div>
+					<div class="table-style">
+						<table border="0" cellspacing="0" cellpadding="tb-param" id="goods-table">
+							<!--<tr>
+								<td>品牌：芙沫雅</td>
+								<td>厚薄：加厚</td>
+								<td>纺织类材质：其他</td>
+							</tr>
+							<tr>
+								<td>服装版型：宽松</td>
+								<td>纺织服装款式：其他</td>
+								<td>厚薄：加厚</td>
+							</tr>
+							<tr>
+								<td>领型：高领</td>
+								<td>衣长：中长款</td>
+								<td>服装风格：简约</td>
+							</tr>
+							<tr>
+								<td>图案：纯色</td>
+							</tr>-->
+						</table>
+					</div>
+					
+					
+					<div class="goods-info-tit">
+						<span>物流与售后</span>
+					</div>
+					<!--物流-->
+					<div class="shouhou">
+						<p>
+							<b>商家提醒：</b>
+							此商品由品牌商从
+							<!--发出城市-->
+							<b id="shouhou-city"></b>
+							通过
+							<!--快递方式-->
+							<b id="shouhou-kd"></b>
+							发货
+						</p>
+						<p>
+							<b>24小时发货：</b>
+							买家付款成功后，商家将在24小时内完成发货。（节假日等特殊情况除外）
+						</p>
+						<p>
+							<b>包裹跟踪：</b>
+							您可在
+							<a href="" style="color: #3399cc;">【我的订单】</a>
+							中查询物流跟踪信息。
+						</p>
+						<p>
+							<b>确认收货：</b>
+							当快件送达至您的收货地址后，卷皮将为您自动确认收货并将奖励积分发放至您的账户。
+						</p>
+						<div style="margin: 20px 0 20px 50px;">
+							<img src="img/newgoods/renturn-process.jpg"/>
+						</div>
+						<p style="line-height: 2;">
+							<b>售后服务承诺</b>
+							<br />
+                                                        收到货后，如果因为主观原因不喜欢/不想要了，在不影响二次销售的情况下，签收后7天内，卷皮网为您提供七天无理由退货服务。如果未收到货或收到商品有质量问题，您可以在签收后15天内申请售后。
+						</p>
+						<p>
+							<b>运费补贴政策</b>
+							<br />
+							商品存在问题时，请及时申请售后，卷皮将提供至少10元的退货运费补贴。如遇到少件、错发、空包裹等情况，还额外提供至少10元的补偿。
+							<a href="" style="color: #3399cc;">退货运费补贴说明>></a>
+						</p>
+						<p>
+							<b>价格说明</b>
+							关于卷皮商品价格的说明
+							<a href="" style="color: #3399cc;">查看详情>></a>
+						</p>
+					</div>
+					<div class="goods-info-tit">
+						<span>消费保障</span>
+					</div>
+					<div class="details-info">
+						<ul class="details-ul">
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+							<li><span></span></li>
+						</ul>
+						<div class="details-info-big">
+							<div class="">
+								<img src="img/newgoods/cp02_1.jpg" alt="" />
+								<img src="img/newgoods/cp02_2.jpg" alt="" />
+								<img src="img/newgoods/cp02_3.jpg" alt="" />
+								<img src="img/newgoods/cp02_4.jpg" alt="" />
+								<img src="img/newgoods/cp02_5.jpg" alt="" />
+								<img src="img/newgoods/cp02_6.jpg" alt="" />
+								<img src="img/newgoods/cp02_7.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 网页底部内容 -->
+			<div class="goods_footer">
+				<div class="goods-footer-div">
+					<!--二维码div-->
+					<div class="code-div isblock">
+						<img src="img/newgoods/jp-app-90.png"/>
+						<p>随时逛 及时抢</p>
+					</div>
+					<!--底部导航-->
+					<div class="footer-down-div">
+						<dl class="down-div-dl">
+							<dt>获取更新</dt>
+							<dd>
+								<a>
+									<i></i>
+									iPhone/Android
+								</a>
+							</dd>
+							<dd>
+								<a href="">
+									<i></i>
+									卷皮QQ空间
+								</a>
+							</dd>
+							<dd>
+								<a>	
+									<i></i>
+									卷皮新浪微博
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									开放API
+								</a>
+							</dd>
+						</dl>
+						
+						<dl class="down-div-dl">
+							<dt>商务合作</dt>
+							<dd>
+								<a>
+									<i></i>
+									卖家免费报名
+								</a>
+							</dd>
+							<dd>
+								<a href="">
+									<i></i>
+									商家入驻
+								</a>
+							</dd>
+							<dd>
+								<a>	
+									<i></i>
+									廉政邮箱
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									开放平台
+								</a>
+							</dd>
+						</dl>
+						
+						<dl class="down-div-dl">
+							<dt>公司信息</dt>
+							<dd>
+								<a>
+									<i></i>
+									关于卷皮
+								</a>
+							</dd>
+							<dd>
+								<a href="">
+									<i></i>
+									媒体报道
+								</a>
+							</dd>
+						</dl>
+						
+						<dl class="down-div-dl" style="width: 100px;display: inline-block;">
+							<dt>帮助中心</dt>
+							<dd>
+								<a>
+									<i></i>
+									新手上路
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									网站地图
+								</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="footer_phone">
+						<div class="phone-icon"></div>
+						<span class="phone-desc">
+							周一至周日
+							<br />
+							9:00-21:00
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var shop_total = 1; // 商品数量
+			
+			// 用户登录数据读取
+			var userinfo = document.getElementById('user_isLogin');
+			var userisLogin = localStorage.getItem("isLogin");
+			if(userisLogin!=null){
+				$("#login").hide()
+				$("#register").hide()
+				userinfo.innerText = userisLogin;
+			}
+			
+			//  一键置顶
+		  	$(".side_gotop").mouseenter(function(){
+		  		$(".side_gotop>.hide_user").show(1).css({
+		  			"left":"-79px"
+		  		})
+		  	});
+		  	$(".side_gotop").mouseleave(function(){
+		  		$(".side_gotop>.hide_user").hide().css({
+		  			"left":"-99px"
+		  		});
+		  	});
+		  	// 置顶函数
+		  	window.onscroll=function(){ // 获取页面的滚动
+				topScroll = document.documentElement.scrollTop || document.body.scrollTop;
+			}
+		  	$("#goTop").click(function(){
+		  		var goTop_timer = setInterval(function(){
+		  			window.scrollBy(0,-100); // 每次滚动的距离
+			  		if(topScroll==0){
+			  			clearInterval(goTop_timer);
+			  		}
+		  		},10);
+		  	});
+			
+			// 购物车数量的增加
+			var shop_num=[]; 
+			for(var key in localStorage){
+		  		if(key.match(/\d{9}/g)){
+		  			shop_num.push(key.match(/\d{9}/g));
+		  		}
+		  		$("#shopack>span:last-child").text(shop_num.length);
+		  		$(".side_shop>span").text(shop_num.length)
+			}
+			//console.log(shop_num)
+			// 购物车详情页
+			$(".side_shop").click(function(){
+				location.href = "shopcardPage.html";
+			});
+			
+			// 搜素框内容更改
+			$("#search").focusin(function(){
+				$(this).val("");
+			});
+			$("#search").focusout(function(){
+				$(this).val("请输入您想找的宝贝");
+			});
+			
+			// 鼠标点击导航栏样式
+			$(".shop_ul>li").click(function(){
+				$(".shop_ul>li").css({"background-color":""});
+				$(this).css({"background-color":"#ff464e"});
+				
+				$(".shop_ul>li>a").css({"color":""});
+				$(this).children().css({"color":"white"});
+			});
+			
+			// 手机版下载框
+			$(".phone_down").mouseenter(function(){
+				$(".hide_down").css({"display":"block"});
+				$(".hide_down").addClass("animated fadeInDown");
+			});
+			$(".phone_down").mouseleave(function(){
+				$(".hide_down").addClass("animated rotateOutDownLeft");
+				setTimeout(function(){
+					$(".hide_down").css({"display":"none"});
+					$(".hide_down").removeClass("animated rotateOutDownLeft");
+				},500);
+ 			});
+ 			
+ 			// 鼠标移入小图预览
+ 			/*$(".goods-small-box>li").mouseenter(function(){
+ 				$(this).css({"border":"1px solid #666"}).siblings().css({"border":""})
+ 				$(".goods-big-box>img").eq($(this).index()).show().siblings().hide();
+ 				//console.log($(".goods-big-box>img").eq($(this).index()));
+ 				var a = $(".goods-big-box>img").eq($(this).index()).clone();
+ 				$('.fdj-show>img').remove();
+ 				a.css({"position":"absolute"})
+ 				$('.fdj-show').append(a);
+ 			});*/
+ 			
+ 			// 商品颜色选择样式
+ 			$(".color-sele>li").click(function(){
+ 				var index = $(this).index();
+ 				$(this).css({"border-color":"#ff464e"}).siblings().css({"border-color":""})
+ 				$(".color-sele>li>a>span").css({"color":"#666"})
+ 				$(".color-sele>li>a>span").eq(index).css({"color":"#ff464e"});
+ 				switch(index){
+ 					case 0:
+ 						$(".goods-big-box>img").eq(3).show().siblings().hide();
+ 						break;
+ 					case 1:
+ 						$(".goods-big-box>img").eq(2).show().siblings().hide();
+ 						break;
+ 					case 2:
+ 						$(".goods-big-box>img").eq(4).show().siblings().hide();
+ 						break;
+ 					case 3:	
+ 						$(".goods-big-box>img").eq(0).show().siblings().hide();
+ 						break;
+ 					case 4:
+ 						$(".goods-big-box>img").eq(1).show().siblings().hide();
+ 						break;
+ 				}
+ 			});
+ 			
+ 			// 商品倒计时
+ 			var starttime = new Date("2018/12/23");
+		 	setInterval(function(){
+			    var nowtime = new Date();
+			    var time = starttime - nowtime; // 开始的日期，减去现在的时间，得到相差的毫秒数
+			    var day = parseInt(time / 1000 / 60 / 60 / 24);
+			    var hour = parseInt(time / 1000 / 60 / 60 % 24); 
+			    var minute = parseInt(time / 1000 / 60 % 60);
+			    var seconds = parseInt(time / 1000 % 60);
+			    $('#d').html(day);
+			    $('#h').html(hour);
+			    $('#m').html(minute);
+			    $('#s').html(seconds);
+		  	},1000);
+ 			
+ 			// 商品减少和增加
+ 			$(".decrea").click(function(){
+ 				shop_total--;
+ 				if(shop_total<1){
+ 					shop_total = 1;
+ 				}
+ 				$(".num-div>input").val(shop_total);
+ 			});
+ 			$(".increa").click(function(){
+ 				shop_total++;
+ 				if(shop_total>10){
+ 					shop_total = 10;
+ 				}
+ 				$(".num-div>input").val(shop_total);
+ 			});
+ 			
+ 			// 吸顶导航样式
+ 			$(".content-ul>li").click(function(){
+ 				$(this).css({
+ 					"border-bottom-color":"#ff464e"
+ 				}).siblings().css({
+ 					"border-bottom-color":""
+ 				});
+ 				$(".content-ul>li>a").css({
+ 					"color":""
+ 				});
+ 				$(".content-ul>li>a").eq($(this).index()).css({
+ 					"color":"#ff464e"
+ 				});
+ 			});
+ 			
+ 			// 消费者保障图片
+ 			$(".details-info>ul>li").mouseenter(function(){
+ 				$(".details-info-big>div>img").eq($(this).index()).show().siblings().hide();
+ 			});
+ 			
+ 			// 配送的城市选择
+ 			$(".city-sele").click(function(){
+ 				$(".city-sele>ul").toggle();
+ 			});
+ 			$(".city-sele>ul>li").click(function(){
+ 				$(".city-sele>span").remove();
+ 				$(".city-sele").append("<span>"+$(this).html()+"</span>");
+ 			});
+ 			
+			// 放大镜
+ 			var total_box = document.getElementsByClassName('goods-body')[0]; // 总体盒子
+ 			var gtb = document.getElementsByClassName('goods-total-box')[0]; // 包含小图和大图的盒子
+ 			var container = document.getElementsByClassName('goods-big-box')[0]; // 放大镜所在大图
+ 			var fdj_box = document.getElementsByClassName('fdj-box')[0]; // 放大镜
+ 			var fdj_show = document.getElementsByClassName('fdj-show')[0];
+ 			var fdjhow = document.querySelectorAll('.fdj-show>img')[0];
+ 			container.addEventListener('mousemove',movefjd);
+ 			container.addEventListener("mouseleave",hidefdj);
+ 			function hidefdj(){
+ 				fdj_box.style = "display: none";
+ 				fdj_show.style = "display: none";
+ 			}
+ 			function movefjd(e){
+ 				fdj_box.style = "display: inline-block";
+ 				fdj_show.style = "display: inline-block";
+ 				e = e || window.event;
+ 				// 鼠标距离页面的距离
+ 				var x = e.pageX;
+ 				var y = e.pageY;
+ 				
+ 				// 移动的方块距离盒子的距离 = 鼠标距离页面的距离 - 容器距离页面的距离 - 自身宽度的一半
+ 				var left = x - getPos(container).left - fdj_box.offsetWidth/2;
+ 				var top1 = y - getPos(container).top - fdj_box.offsetHeight/2;
+ 				
+ 				// 限制移动的极限，不能超出容器
+ 				if(left<0){
+ 					left = 0;
+ 				}else if(left>container.clientWidth - fdj_box.offsetWidth){
+ 					left = container.clientWidth - fdj_box.offsetWidth;
+ 				}
+ 				if(top1<0){
+ 					top1 = 0;
+ 				}else if(top1>container.clientHeight - fdj_box.offsetHeight){
+ 					top1 = container.clientHeight - fdj_box.offsetHeight;
+ 				}
+ 				// 背景图要移动的距离 
+ 				// 倍数 = 放大镜放大的盒子自身的宽/移动遮罩的自身宽
+ 				var n = fdj_show.offsetWidth/fdj_box.offsetWidth;
+ 				// 遮罩移动的内容*倍数;
+ 				// 如1:4的两个图，左边移动了10px，右边就要移动40px
+ 				var pL = (-1)*left*n;
+                var pT = (-1)*top1*n;
+ 				// 拿到图片
+ 				var fdjhow = document.querySelectorAll('.fdj-show>img')[0];
+ 				fdj_box.style.left = left + "px";
+ 				fdj_box.style.top = top1 + "px";	
+ 				// 放大镜的放大图
+ 				fdjhow.style.left = pL+ "px";	
+                fdjhow.style.top = pT+"px";
+                
+                /* 计算出背景图应该放大的倍数
+                var k = container.offsetWidth/fdj_box.offsetWidth;
+			    var bgsize = k*fdj_show.offsetWidth;
+			    console.log(bgsize)*/
+ 			}
+ 			
+ 			// 通过ajax请求json数据
+ 			function getGoodsData(callback){
+ 				var xmlRe = new XMLHttpRequest();
+ 				xmlRe.open("GET","js/goodsData.json",true);
+ 				xmlRe.onreadystatechange=function(){
+ 					if(xmlRe.status==200&&xmlRe.readyState==4){
+ 						var a = JSON.parse(xmlRe.responseText);
+ 						callback(a);
+ 						//console.log(a)
+ 					}
+ 				}
+ 				xmlRe.send();
+ 			}
+ 			getGoodsData(loadgoodsdata);
+ 			function loadgoodsdata(data){
+ 				var uid = location.search.split("=")[1]; // 拿到首页传过来的id
+ 				data.forEach(function(ele){
+ 					// console.log(ele[uid]); // id对应的商品
+ 					// console.log(ele[uid]["g-pic"][0].sm_pic,ele[uid]["g-pic"][0].big_pic);
+ 					
+ 					// 对商品详情页的单独存在的内容进行渲染
+ 					$(".goods-wrap>h2").html(ele[uid]["g-title"]);
+ 					$(".price-a>span").html(ele[uid]["g-nowprice"]);
+ 					$(".price-b>span").html(ele[uid]["g-oldprice"]);
+ 					$("#promo-img").html(ele[uid]["g-tag"]);
+ 					$(".price-promo>span:nth-child(2)").html(ele[uid]["g-cuxiao"]);
+ 					$("#forcity").html(ele[uid]["g-local"]);
+ 					$(".store-img-box").append("<img src="+ele[uid]["g-store_img"]+">");
+ 					$(".store-p1").html(ele[uid]["g-store_name"]);
+ 					$(".store-p2").html(ele[uid]["g-buyer"]);
+ 					
+ 					// 添加商品左侧的小图
+	 				for(var i=0; i<ele[uid]["g-pic"].length; i++){
+	 					var li = $('<li>');
+	 					li.append("<img src="+ele[uid]["g-pic"][i].sm_pic+">");
+	 					$(".goods-small-box").append(li);
+	 				}
+	 				$('.fdj-show').append("<img src="+ele[uid]["g-pic"][0].big_pic+">"); //初始化放大镜的第一张图
+	 				
+	 				// 添加商品的大图以及放大的细节图
+	 				for(var i=0; i<ele[uid]["g-pic"].length; i++){
+	 					// console.log(ele[uid]["g-pic"][i].big_pic);
+	 					var img = $("<img>");
+	 					img.attr('src',ele[uid]['g-pic'][i].big_pic);
+	 					img.addClass('big-goodsimg');
+	 					$(".goods-small-box>li").eq(0).css({"border": "1px solid #666"});//给第一张小图外边框样式
+	 					$(".goods-big-box").append(img);
+	 					$(".goods-small-box>li").mouseenter(function(){
+			 				$(this).css({"border":"1px solid #666"}).siblings().css({"border":""})
+			 				$(".goods-big-box>img").eq($(this).index()).show().siblings().hide();
+			 				var a = $(".goods-big-box>img").eq($(this).index()).clone();
+			 				$('.fdj-show>img').remove();
+			 				a.css({"position":"absolute"})
+			 				$('.fdj-show').append(a);
+		 				});
+	 				}
+	 				
+ 					// 添加颜色
+ 					for(var i=0; i<ele[uid]["g-color"].length; i++){
+ 						// console.log(ele[uid]["g-color"][i])
+ 						var tag_li = $("<li>");
+ 						var tag_a = $("<a>");
+ 						tag_a.append("<img src="+ele[uid]["g-color"][i].color_pic+">");
+ 						tag_a.append("<span>"+ele[uid]["g-color"][i].color+"</span>");
+ 						tag_li.append(tag_a);
+ 						$(".color-sele").append(tag_li);
+ 						// 选取颜色样式
+ 						$(".color-sele>li").click(function(){
+ 							$(this).css({"border":"1px solid #ff464e"}).siblings().css({"border":""});
+ 							$(".color-sele>li>a>span").css({"color":""});
+ 							$(this).find("span").css({"color":"#ff464e"});
+ 							
+ 						});
+ 					}
+ 					
+ 					// 添加尺码
+ 					if(ele[uid]["g-size"].length==0){
+ 						$(".size-box").hide()
+ 					}else{
+ 						for(var i=0; i<ele[uid]["g-size"].length; i++){
+	 						//console.log(ele[uid]["g-size"][i])
+	 						var tag_li = $("<li>");
+	 						var tag_a = $("<a>");
+	 						var tag_span = $("<span>");
+	 						tag_span.html(ele[uid]["g-size"][i]);
+	 						tag_a.append(tag_span);
+	 						tag_li.append(tag_a);
+	 						$(".size-sele").append(tag_li);
+	 						// 选取尺寸样式
+	 						$(".size-sele>li").click(function(){
+	 							$(".size-sele>li>a>span").css({"color":""});
+	 							$(this).find("span").css({"color":"#ff464e"});
+	 							$(this).css({"border":"1px solid #ff464e"}).siblings().css({"border":""});
+	 							
+	 						});
+ 						}
+ 					}
+ 					// 添加商品详情-整体款式
+ 					$("#total-show>span").html(ele[uid]["g-total-show"]);
+ 					if(ele[uid]["g-total-make"].length==0){
+ 						$("#total-make").hide()
+ 					}else{
+ 						$("#total-make").show()
+ 						$("#total-make>span").html(ele[uid]["g-total-make"]);
+ 					}
+ 					if(ele[uid]["g-total-post"].length==0){
+ 						$("#total-post").hide()
+ 					}else{
+ 						$("#total-make").show()
+ 						$("#total-post>span").html(ele[uid]["g-total-post"]);
+ 					}
+ 					
+ 					for(var i=0; i<ele[uid]["g-show_img"].length; i++){
+ 						$(".total-showStyle").append("<img src="+ele[uid]["g-show_img"][i]+">");
+ 					}
+ 					// 添加商品详情-做工细节图片
+ 					for(var i=0; i<ele[uid]["g-make_img"].length; i++){
+ 						$(".total-makeStyle").append("<img src="+ele[uid]["g-make_img"][i]+">");
+ 					}
+ 					
+ 					// 添加商品详情-模特展示图片
+ 					for(var i=0; i<ele[uid]["g-model_img"].length; i++){
+ 						$(".total-postStyle").append("<img src="+ele[uid]["g-model_img"][i]+">");
+ 					}
+ 					
+ 					$(".goods-name").html(ele[uid]["h-title"]);
+ 					$("#shouhou-city").html(ele[uid]["g-fromto"]);
+ 					$("#shouhou-kd").html(ele[uid]["g-pack"]);
+ 					
+ 					// 商品的详细参数列表
+ 					var tr = $("<tr>");
+ 					for(var i=0; i<ele[uid]["tr1"].length; i++){
+ 						var td = $("<td>");
+ 						td.html(ele[uid]["tr1"][i]);
+ 						tr.append(td);
+ 						$("#goods-table").append(tr);
+ 					}
+ 					var tr = $("<tr>");
+ 					if(ele[uid]["tr2"].length==1){
+ 						
+ 					}else{
+ 						for(var i=0; i<ele[uid]["tr2"].length; i++){
+	 						var td = $("<td>");
+	 						td.html(ele[uid]["tr2"][i]);
+	 						tr.append(td);
+	 						$("#goods-table").append(tr);
+ 						}
+ 					}
+ 					
+ 					var tr = $("<tr>");
+ 					if(ele[uid]["tr3"].length==1){
+ 					}else{
+ 						for(var i=0; i<ele[uid]["tr3"].length; i++){
+	 						var td = $("<td>");
+	 						td.html(ele[uid]["tr3"][i]);
+	 						tr.append(td);
+	 						$("#goods-table").append(tr);
+ 						}
+ 					}
+ 					
+ 					var tr = $("<tr>");
+ 					if(ele[uid]["tr4"].length==1){
+ 						return false;
+ 					}else{
+ 						for(var i=0; i<ele[uid]["tr4"].length; i++){
+	 						var td = $("<td>");
+	 						td.html(ele[uid]["tr4"][i]);
+	 						tr.append(td);
+	 						$("#goods-table").append(tr);
+ 						}
+ 					}
+ 					var tr = $("<tr>");
+ 					for(var i=0; i<ele[uid]["tr5"].length; i++){
+ 						var td = $("<td>");
+ 						td.html(ele[uid]["tr5"][i]);
+ 						tr.append(td);
+ 						$("#goods-table").append(tr);
+ 					}
+ 					var tr = $("<tr>");
+ 					for(var i=0; i<ele[uid]["tr6"].length; i++){
+ 						var td = $("<td>");
+ 						td.html(ele[uid]["tr6"][i]);
+ 						tr.append(td);
+ 						$("#goods-table").append(tr);
+ 					}
+ 				});
+ 			}
+ 			
+ 			// 该对象用于存储商品信息
+		 	var goods_info = {
+ 				"color": [],
+ 				"size": [],
+ 				"num": 0
+			}
+ 			// 将商品添加至购物车
+ 			$(".shopingcar").click(function(){
+ 				var gid = location.href.match(/id=\d{9}/g)[0].slice(3); // 通过地址栏截取到商品id
+ 				// 如果用户没登录的话，跳转到登录界面
+ 				if(localStorage.getItem("isLogin")!=null){
+ 					for (var i=0; i<$(".color-sele>li").length; i++) {
+ 						// 添加商品的颜色
+ 						if($(".color-sele>li").eq(i).css("border-color")=="rgb(255, 70, 78)"){
+	 						//console.log($(".color-sele>li").eq(i).text());
+	 						if(goods_info.color.indexOf($(".color-sele>li").eq(i).text())!=-1){
+	 						}else{
+	 							goods_info.color.push($(".color-sele>li").eq(i).text());
+	 						}
+	 					}
+	 				}
+	 				for(var i=0; i<$(".size-sele>li").length; i++){
+	 					// 添加商品的尺码
+	 					if($(".size-sele>li").eq(i).css("border-color")=="rgb(255, 70, 78)"){
+	 						//localStorage.setItem(gid,$(".size-sele>li").eq(i).text());
+	 						console.log(goods_info.size)
+	 						if(goods_info.size.indexOf($(".size-sele>li").eq(i).text())!=-1){
+	 						}else{
+	 							goods_info.size.push($(".size-sele>li").eq(i).text());
+	 						}
+	 					}
+	 				}
+	 				goods_info.num += (parseInt($(".num-div>input").val())); // 所选商品的数量累加
+	 				localStorage.setItem(gid,JSON.stringify(goods_info)); // 将所选商品的所有信息添加到购物车中
+	 				$("#shopack>span:last-child").text(shop_num.length+1);
+		  			$(".side_shop>span").text(shop_num.length+1);
+ 				}else{
+ 					// 进行登录
+ 					var a = confirm("检测到您未登录，请登录后再进行操作");
+ 					if(a){	 
+ 						location.href = "register.html?=login";
+ 					}
+ 				}
+ 			});
+ 			
+ 			// 添加到购物车的动画
+ 			$(".shopingcar").click(function(){
+ 				$(".addshop_ant").show();
+ 				$(".addshop_ant").animate({
+ 					top: '-150px',
+ 					right: '-420px'
+ 				},500,function(){
+ 					$(".addshop_ant").css({
+ 						display: "none",
+ 						top: "-35px",
+ 						right: "0px"
+ 					})
+ 				});
+ 			});
+		</script>
+	</body>
+</html>

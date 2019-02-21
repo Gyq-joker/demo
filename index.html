@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/juanpi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/utils.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goods.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	<body style="background-color: #f6f6f6;">
+		<div class="body">
+			<!--侧边栏-->
+			<div class="side-box">
+				<ul class="side_ul1">
+					<li class="side_user">
+						<i class="sideicon"></i>
+					</li>
+					<li class="side_shop">
+						<i class="sideicon"></i>
+						<span id="shop_packnum">0</span>
+					</li>
+					<li class="side_like">
+						<i class="sideicon"></i>
+						<div class="hide_user">
+							<p>我的收藏</p>
+							<i></i>
+						</div>
+					</li>
+					<li class="side_quan">
+						<i class="sideicon"></i>
+						<div class="hide_user">
+							<p>优惠券</p>
+							<i></i>
+						</div>
+					</li>
+					<li class="side_code">
+						<i class="sideicon"></i>
+						<div id="sideCode">
+							<img src="img/jp-app-90-new.png"/>
+							<span>随时逛 随时抢</span>
+							<i></i>
+						</div>
+					</li>
+					<li class="side_gotop" id="goTop">
+						<i class="sideicon"></i>
+						<div class="hide_user">
+							<p>一键置顶</p>
+							<i></i>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<!--吸顶导航-->
+			<div class="side_top_box">
+				<ul class="side_top_ul">
+					<li style="color: #ff464e;">今日上新</li>
+					<li style="color: #eee;">|</li>
+					<li>女装</li>
+					<li>男装</li>
+					<li>鞋子</li>
+					<li>箱包</li>
+					<li>母婴</li>
+					<li>美妆</li>
+					<li>居家</li>
+					<li>家纺</li>
+					<li>文体</li>
+					<li>美食</li>
+					<li>数码</li>
+					<li>电器</li>
+					<li>内衣</li>
+					<li>配饰</li>
+					<li>[即将上线]</li>
+				</ul>
+			</div>
+			
+			
+			<!--顶部菜单栏-->
+			<div class="topNav">
+				<div class="topNav_position">
+					<div class="navBox">
+						<div class="leftNav">
+							<a href="register.html?=login" id="login">登录</a>
+							<a href="register.html?=register" id="register">免费注册</a>
+							<a id="user_isLogin"></a>
+							<a id="user_exit"></a>
+							<span>|</span>
+							<a href="">我的订单</a>
+							<a href="">商家入驻</a>
+						</div>
+						<div class="midNav">
+							<a href="shopcardPage.html" id="shopack">
+								<span class="iconpos"></span>
+								<span>购物袋</span>
+								<span class="iconpos">0</span>
+							</a>
+						</div>
+						<div class="rightNav">
+							<a href="" style="position: relative;">商家中心</a>
+							<a href="">客户服务</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<!--导航栏-->
+			<div class="header_nav">
+				<!--搜索框一栏-->
+				<div class="top_sch">
+					<!--网站标题-->
+					<div class="site_tit isblock">
+						<a href="juanpi.html"></a>
+					</div>
+					<!--网站服务-->
+					<div class="site_mess iconpos"></div>
+					<!--搜索框-->
+					<div class="search search-w isabsolute">
+						<input type="text" class="search-w" id="search" value="请输入想找的宝贝"/>
+						<input type="button" id="smt"/>
+					</div>
+				</div>
+				<!--商品导航-->
+				<div class="shop_nav">
+					<ul class="shop_ul">
+						<li style="background-color: #ff464e;"><a style="color: white;">首页</a></li>
+						<li><a>品牌折扣</a></li>
+						<li><a>9.9包邮</a></li>
+						<li><a>即将上线</a></li>
+						<li class="phone_down">
+							<a>手机版</a>
+							<div class="hide_down">
+								<p class="down_code"></p>
+								<p>随时逛 及时抢</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--中间轮播图部分-->
+			<div class="topbar">
+				<ul class="bar_ul">
+					<li>
+						<i class="bar_icon"></i>
+						<a>女装</a>
+					</li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>男装</a>
+					</li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>鞋子</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>箱包</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>母婴</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>美妆</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>居家</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>家纺</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>文体</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>美食</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>数码</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>电器</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>内衣</a></li>
+					<li>
+						<i class="bar_icon"></i>
+						<a>配饰</a></li>
+				</ul>
+				
+				<!--轮播图-->
+				<div class="play_box">
+					<div class="left_btn">
+						<i></i>
+					</div>
+					<!--轮播图片-->
+					<ul class="play_ul">
+						<li style="display: block;"></li>
+						<li></li>
+						<li></li>
+					</ul>
+					<div class="right_btn">
+						<i></i>
+					</div>
+					
+					<!--轮播图小点-->
+					<ul class="play_point">
+						<li style="background-color: rgba(0,0,0,0);"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				
+				<!--右侧内容-->
+				<div class="right_con isblock">
+					<ul class="rcon_ul isblock">
+						<li><img src="img/r-1.jpg" alt="" /></li>
+						<li><img src="img/r-2.jpg" alt="" /></li>
+						<li><img src="img/r-3.jpg" alt="" /></li>
+						<li><img src="img/r-4.jpg" alt="" /></li>
+						<li><img src="img/r-5.jpg" alt="" /></li>
+					</ul>
+				</div>
+				<div class="right_down_code"></div>
+			</div>
+			
+			<div class="brand_box clear">
+				<!--标题-->
+				<div class="brand_tit clear">
+					<h2 class="isblock">今日品牌</h2>
+					<span>TODAY'S BRAND</span>
+					<a class="isblock iconpos">全部品牌</a>
+				</div>
+				
+				<!--倒计时-->
+				<div class="brand_time_box">
+					<ul class="time_ul">
+						<li>
+							<div class="time_div">
+								<i class="clockimg"></i>
+								<span>剩余</span>
+								<span class="whatime">00天 00时 00分 00秒</span>
+							</div>
+							<img src="img/5bfdf93f33b0890f5461ede0_680x280.jpg" class="imgsize"/>
+							<span>全场1件5折</span>
+							<span>进入活动</span>
+						</li>
+						<li>
+							<div class="time_div">
+								<i class="clockimg"></i>
+								<span>剩余</span>
+								<span class="whatime1">00天 00时 00分 00秒</span>
+							</div>
+							<img src="img/5bfcfda633b0892b591febf8_680x280.jpg" class="imgsize"/>
+							<span>全场1折起</span>
+							<span>进入活动</span>
+						</li>
+						<li>
+							<div class="time_div">
+								<i class="clockimg"></i>
+								<span>剩余</span>
+								<span class="whatime2">00天 00时 00分 00秒</span>
+							</div>
+							<img src="img/5bfcffd233b08924ca465ea3_680x280.jpg" class="imgsize"/>
+							<span>全场1折起</span>
+							<span>进入活动</span>
+						</li>
+						<li>
+							<div class="time_div">
+								<i class="clockimg"></i>
+								<span>剩余</span>
+								<span class="whatime3">00天 00时 00分 00秒</span>
+							</div>
+							<img src="img/5bfdf880b6f8ea3c7a77f8a0_680x280.jpg" class="imgsize"/>
+							<span>全场1件49折</span>
+							<span>进入活动</span>
+						</li>
+					</ul>
+					<ul class="more_box">
+						<li>更多品牌特卖:</li>
+						<li>
+							<img src="img/59661c42a9fcf876a934cde3_180x90.png" alt="" />
+						</li>
+						<li>
+							<img src="img/5a0b9d0da9fcf83d2c1b8a23_180x90.png"/>
+						</li>
+						<li>
+							<img src="img/5b62c52533b08937df03a4b3_180x90.png"/>
+						</li>
+						<li>
+							<img src="img/581f43eb151ad1a93c8b4588_180x90.png"/>
+						</li>
+						<li>
+							<img src="img/5b59ab0833b08945817ee3ed_180x90.png"/>
+						</li>
+						<li>
+							<img src="img/5699c09f92be595a048b4567_180x90.png"/>
+						</li>
+						<li>
+							<img src="img/573ed7d5151ad14a538b460d_180x90.png"/>
+						</li>
+						<li>
+							<img src="img/56a5cb6e92be59aea48b4586_180x90.png"/>
+						</li>
+						<li>	
+							<a>查看全部</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--今日新品-->
+			<div class="today_new-box clear">
+				<!--新品标题-->
+				<div class="brand_tit">
+					<h2 class="isblock">今日新品</h2>
+					<span>TODAY'S NEW</span>
+					<a>每天10点上新</a>
+				</div>
+				<!--所有商品-->
+				<ul class="all-goods clear">
+					<!--<li>
+						<i id="addto-shop"></i>
+					</li>-->
+				</ul>
+				<!--翻页-->
+				<div class="page_list">
+					<ul class="page_list_ul">
+						<li style="color: #bbb;font-weight: 100;">上一页</li>
+						<li style="background-color: #ff464e; color: white;">1</li>
+						<li>2</li>
+						<li>...</li>
+						<li>13</li>
+						<li>14</li>
+						<li>下一页</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--网页底部内容-->
+			<div class="home_footer">
+				<div class="home-footer-div clear">
+					<!--二维码div-->
+					<div class="hcode-div isblock clear">
+						<img src="img/newgoods/jp-app-90.png"/>
+						<p>随时逛 及时抢</p>
+					</div>
+					<!--底部导航-->
+					<div class="hfooter-down-div clear">
+						<dl class="hdown-div-dl clear">
+							<dt>获取更新</dt>
+							<dd>
+								<a>
+									<i></i>
+									iPhone/Android
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									卷皮QQ空间
+									
+								</a>
+							</dd>
+							<dd>
+								<a>	
+									<i></i>
+									卷皮新浪微博
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									开放API
+								</a>
+							</dd>
+						</dl>
+						<dl class="down-div-dl  clear">
+							<dt>商务合作</dt>
+							<dd>
+								<a>
+									<i></i>
+									卖家免费报名
+								</a>
+							</dd>
+							<dd>
+								<a href="">
+									<i></i>
+									商家入驻
+								</a>
+							</dd>
+							<dd>
+								<a>	
+									<i></i>
+									廉政邮箱
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									开放平台
+								</a>
+							</dd>
+						</dl>
+						<dl class="down-div-dl  clear">
+							<dt>公司信息</dt>
+							<dd>
+								<a>
+									<i></i>
+									关于卷皮
+								</a>
+							</dd>
+							<dd>
+								<a href="">
+									<i></i>
+									媒体报道
+								</a>
+							</dd>
+						</dl>
+						<dl class="down-div-dl  clear" style="width: 100px;display: inline-block;">
+							<dt>帮助中心</dt>
+							<dd>
+								<a>
+									<i></i>
+									新手上路
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									网站地图
+								</a>
+							</dd>
+						</dl>
+						<div class="hfooter_phone clear">
+						<div class="hphone-icon clear"></div>
+							<span class="hphone-desc clear">
+								周一至周日
+								<br />
+								9:00-21:00
+							</span>
+							<br />
+							<span id="callp">客服热线：400-0090-869</span>
+						</div>
+					</div>
+					
+					
+					<!--友情链接部分-->
+					<div class="hlink">
+						<span class="hlink-span">友情链接：</span>
+						<div class="hlink-divul">
+							<ul class="hlink-ul">
+								<li>
+									<a href="">九块邮</a>
+									<a href="">易迅优惠券</a>
+									<a href="">中国鲜花礼品网</a>
+									<a href="">钻石小鸟</a>
+									<a href="">箱包品牌</a>
+									<a href="">网上购物</a>
+									<a href="">中国品牌网</a>
+									<a href="">会过VIP</a>
+									<a href="">家居网</a>
+									<a href="">国画</a>
+								</li>
+								<li>
+									<a href="">易登网</a>
+									<a href="">普洱茶</a>
+									<a href="">品牌鞋</a>
+									<a href="">乐峰网优惠券</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hcompany">
+						武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+						<a href="" style="color: #ccc;">鄂公网安备42018502000390号</a>
+						 | 食品流通许可证 SP4201991510041888　　
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			// 数据的全局变量
+			
+			// 用户登录数据读取
+			var userinfo = document.getElementById('user_isLogin');
+			var userisLogin = localStorage.getItem("isLogin");
+			if(userisLogin!=null){
+				$("#login").hide()
+				$("#register").hide()
+				userinfo.innerText = userisLogin;
+			}
+			
+			// 首页商品渲染
+		  	var list = document.getElementsByClassName('all-goods')[0];
+			function homeDate(callback){
+				var xhr = new XMLHttpRequest(); // 创建对象
+				xhr.open("GET","js/homeDate.json",true); // 获取json文件
+				xhr.onreadystatechange=function(){
+					if(xhr.status==200&&xhr.readyState==4){
+						var a = JSON.parse(xhr.responseText); // 将json文件的内容转化成对象
+						callback(a);
+						// console.log(a);
+					}
+				}
+				xhr.send();
+			}
+			homeDate(loadhomedata);
+			function loadhomedata(data){
+				console.log(data)
+				data.forEach(function(ele){
+					console.log(ele)
+					var goods_li = document.createElement("li") // 创建一个li
+					goods_li.setAttribute("uid",ele["goods_id"]);
+				  	var goods_img = document.createElement("img") // 创建一个商品的img
+				  	goods_img.src = ele["img_url"]; // 设置商品图片
+				  	var goods_now = document.createElement("span"); // 现价
+				  	var goods_old = document.createElement("span"); // 原价
+				  	var goods_div = document.createElement("div"); // 创建价格div
+				  	goods_div.className = "price-box"; // 设置div的class
+				  	goods_now.innerHTML = ele["nowprice"]; // 设置现价的内容
+					goods_old.innerHTML = ele["oldprice"]; // 设置原价的内容
+					goods_div.appendChild(goods_now);
+					goods_div.appendChild(goods_old);
+				  	var goods_tit = document.createElement("a"); // 商品名称的标签
+				  	goods_tit.innerHTML = ele["title"]; // 设置商品的名称
+					var goods_span = document.createElement("span");// 上新
+					goods_span.innerHTML = ele["desc"];
+					var goods_i = document.createElement("i");
+					goods_i.setAttribute("id","addto-shop");
+					goods_li.appendChild(goods_img);
+					goods_li.appendChild(goods_i);
+					goods_li.appendChild(goods_div);
+					goods_li.appendChild(goods_tit);
+					goods_li.appendChild(goods_span);
+					list.appendChild(goods_li);
+				});
+				
+				$(".all-goods>li").click(function(){
+					// console.log($(this).attr("uid"));
+					var s = $(this).attr("uid");
+					location.href = "shopping-goods.html?uid="+s;
+				})
+			}
+			function goodsnumadd(n){
+				return n+=1 ;
+			}
+			// 将商品添加至购物车
+			$("#addto-shop").live("click",function(){
+				/*$(".shopcard-ul>ul>li").each(function(ind,ele){
+					// $(ele).attr("nid")!=that.parent().attr('uid'))
+					console.log($(ele)) //拿到每一个li
+					if($(ele).attr("nid")==$("all-goods>li").attr("uid")){
+						return false;
+					}
+				});*/
+				if($(".shopcard-list-div>span").text().match($(this).parent().find("a").html())){
+					var a = $(".shopcard-list-div>span").text().match($(this).parent().find("a").html())[0];
+					//inputval = Number($(".shopcard-list-div>span").text(a).parent().find("input").val()) ;
+					//var b = Number($(".shopcard-list-div>span").parent().find("input").val())+1;
+					//$(".shopcard-list-div>span").parent().find("input").val(b)
+					console.log(this)
+				}else{
+					console.log($(".shopcard-list-div>span").text())
+					var li = $("<li>");
+					var span = $("<span>");
+					var div = $("<div>");
+					var p = $("<p>");
+					var i = $("<i>");
+					var inputext = $("<input>");
+					div.addClass("shopcard-list-div");
+					span.html($(this).parent().find("a").html());
+					div.append(span);
+					p.html($(this).parent().find("span").html());
+					div.append(p);
+					inputext.attr({"id":"tgoods-num","type":"number","min":"1","value":"1"});
+					div.append(inputext);
+					i.attr("id","del-goods");
+					li.append($(this).parent().find("img").clone());
+					li.attr({"nid":$(this).parent().attr('uid')})
+					li.append(i);
+					li.append(div);
+					$(".shopcard-ul>ul").append(li);
+				}
+				// console.log($(this).parent().find("img").attr("src"))
+			});
+			
+			// 显示添加购物车按钮
+			$(".all-goods>li").live("mouseenter",function(){
+				$(this).find("#addto-shop").css({"display":"inline-block"});
+			});
+			$(".all-goods>li").live("mouseleave",function(){
+				$(this).find("#addto-shop").css({"display":""});
+			});
+			
+			// 购物车商品删除
+			$("#del-goods").live("click",function(){
+				$(this).parent().remove();
+			});
+			
+			// 搜素框内容更改
+			$("#search").focusin(function(){
+				$(this).val("");
+			});
+			$("#search").focusout(function(){
+				$(this).val("请输入您想找的宝贝");
+			});
+			
+			// 鼠标点击导航栏样式
+			$(".shop_ul>li").click(function(){
+				$(".shop_ul>li").css({"background-color":""});
+				$(this).css({"background-color":"#ff464e"});
+				
+				$(".shop_ul>li>a").css({"color":""});
+				$(this).children().css({"color":"white"});
+			});
+			
+			// 手机版下载框
+			$(".phone_down").mouseenter(function(){
+				$(".hide_down").css({"display":"block"});
+				$(".hide_down").addClass("animated fadeInDown");
+			});
+			$(".phone_down").mouseleave(function(){
+				$(".hide_down").addClass("animated rotateOutDownLeft");
+				setTimeout(function(){
+					$(".hide_down").css({"display":"none"});
+					$(".hide_down").removeClass("animated rotateOutDownLeft");
+				},500);
+ 			});
+ 			
+ 			//轮播图部分
+ 			var img_t; // 定时器ID
+ 			var index = 0; // 轮播下标
+ 			// 轮播图自动轮播
+ 			img_t = setInterval(play,3000);
+ 			function play(){
+ 				index++;
+ 				if(index>2){
+ 					index = 0;
+ 				}
+ 				// console.log(index);
+ 				// fadeIn():只是调整元素的透明度
+ 				$(".play_ul>li").eq(index).fadeIn(1500).siblings().fadeOut(1500);
+ 				$(".play_point>li").eq(index).css({
+ 					"background-color":"rgba(0,0,0,0)"
+ 				}).siblings().css({
+ 					"background-color":"white"
+ 				});
+ 			}
+ 			
+ 			// 鼠标移入轮播图框内显示左右按钮
+ 			$(".play_box").mouseenter(function(){
+ 				$(".left_btn").show();
+ 				$(".right_btn").show();
+ 			});
+ 			$(".play_box").mouseleave(function(){
+ 				$(".left_btn").hide();
+ 				$(".right_btn").hide();
+ 			}) 			
+ 			
+ 			// 鼠标移入轮播图框内停止轮播
+ 			$(".play_box").hover(function(){
+            	clearInterval(img_t);
+	        },function(){
+	            img_t = setInterval(play,3000);
+	        });
+	 			
+ 			// 左右点击按钮
+ 			$(".left_btn").click(function(){
+ 				leftMove();
+ 			});
+ 			function leftMove(){
+ 				if(index==0){
+ 					index = 3;
+ 				}
+ 				index--;
+ 				$(".play_ul li").eq(index).fadeIn(800).siblings().fadeOut(800);
+				$(".play_point li").eq(index).css({
+ 					"background-color":"rgba(0,0,0,0)"
+ 				}).siblings().css({
+ 					"background-color":"white"
+ 				});
+ 			}
+ 			$(".right_btn").click(function(){
+ 				rightMove();
+ 			});
+ 			function rightMove(){
+ 				if(index==2){
+ 					index = -1;
+ 				}
+ 				index++;
+ 				$(".play_ul li").eq(index).fadeIn(800).siblings().fadeOut(800);
+				$(".play_point li").eq(index).css({
+ 					"background-color":"rgba(0,0,0,0)"
+ 				}).siblings().css({
+ 					"background-color":"white"
+ 				});
+ 			}
+ 			
+ 			// 轮播图小点
+ 			$(".play_point li").click(function(){
+ 				$(this).css({
+ 					"background-color":"rgba(0,0,0,0)"
+ 				}).siblings().css({
+   					"background-color":"white"
+ 				});
+   				index = $(this).index();
+ 				$(".play_ul li").eq(index).fadeIn(800).siblings().fadeOut(800);
+ 			});
+			
+			// 商品倒计时
+ 			var starttime = new Date("2018/12/25");
+ 			var startime1 = new Date("2018/12/23");
+ 			var startime2 = new Date("2018/12/20");
+		 	setInterval(function(){
+			    var nowtime = new Date();
+			    var nowtime1 = new Date();
+			    var nowtime2 = new Date();
+			    var time = starttime - nowtime; // 开始的日期，减去现在的时间，得到相差的毫秒数
+			    var time1 = startime1 - nowtime1;
+			    var time2 = startime2 - nowtime2;
+			    var day = parseInt(time / 1000 / 60 / 60 / 24);
+			    var day1 = parseInt(time1/1000/60/60/24);
+			    var day2 = parseInt(time2/1000/60/60/24);
+			    
+			    var hour = parseInt(time / 1000 / 60 / 60 % 24); 
+			    var minute = parseInt(time / 1000 / 60 % 60);
+			    var seconds = parseInt(time / 1000 % 60);
+			    $('.whatime').html(day + "天 " + hour + "小时 " + minute + "分钟 " + seconds + "秒 ");
+			    $('.whatime1').html(day1 + "天 " + hour + "小时 " + minute + "分钟 " + seconds + "秒 ");
+			    $('.whatime2').html(day2 + "天 " + hour + "小时 " + minute + "分钟 " + seconds + "秒 ");
+			    $('.whatime3').html(day + "天 " + hour + "小时 " + minute + "分钟 " + seconds + "秒 ");
+		  	},1000);
+		  	
+		  	// 我的收藏
+		  	$(".side_like").mouseenter(function(){
+		  		$(".side_like>.hide_user").show(1).css({
+		  			"left":"-79px"
+		  		});
+		  	});
+		  	$(".side_like").mouseleave(function(){
+		  		$(".side_like>.hide_user").hide().css({
+		  			"left":"-99px"
+		  		});
+		  	});
+		  	
+		  	// 我的优惠券
+		  	$(".side_quan").mouseenter(function(){
+		  		$(".side_quan>.hide_user").show(1).css({
+		  			"left":"-79px"
+		  		});
+		  	});
+		  	$(".side_quan").mouseleave(function(){
+		  		$(".side_quan>.hide_user").hide().css({
+		  			"left":"-99px"
+		  		});
+		  	});
+		  	
+		  	// 购物车界面跳转
+		  	$(".side_shop").click(function(){
+		  		location.href = "shopcardPage.html";
+		  	});
+		  	
+		  	// 二维码显示
+		  	$(".side_code").mouseenter(function(){
+		  		$(".side_code>#sideCode").show(1).css({
+		  			"left":"-150px"
+		  		});
+		  	});
+		  	$(".side_code").mouseleave(function(){
+		  		$(".side_code>#sideCode").hide().css({
+		  			"left":"-160px"
+		  		});
+		  	});
+		  	
+		  	// 我的收藏开关
+		  	/*$(".side_like").click(function(){
+		  		console.log($(".side-box").css("width"))
+		  		if($(".side-box").css("width")=="36px"){
+		  			$(".side-box").css({
+		  				"width":"300px"
+		  			});
+		  			$(".side-shopcard").css({
+		  				"width":"261px"
+		  			})
+		  		}else{
+		  			$(".side-box").css({
+		  				"width":"36px"
+		  			});
+		  			$(".side-shopcard").css({
+		  				"width":"0px"
+		  			});
+		  		}
+		  	});*/
+		  	
+		  	//  一键置顶
+		  	$(".side_gotop").mouseenter(function(){
+		  		$(".side_gotop>.hide_user").show(1).css({
+		  			"left":"-79px"
+		  		})
+		  	});
+		  	$(".side_gotop").mouseleave(function(){
+		  		$(".side_gotop>.hide_user").hide().css({
+		  			"left":"-99px"
+		  		});
+		  	});
+		  	// 置顶函数
+		  	window.onscroll=function(){ // 获取页面的滚动
+				topScroll = document.documentElement.scrollTop || document.body.scrollTop;
+			}
+		  	$("#goTop").click(function(){
+		  		var goTop_timer = setInterval(function(){
+		  			window.scrollBy(0,-100); // 每次滚动的距离
+			  		if(topScroll==0){
+			  			clearInterval(goTop_timer);
+			  		}
+		  		},10);
+		  	});
+		  	
+		  	// 友情导航
+		  	var link_time_ind = 0;
+		  	var link_timer = setInterval(function(){
+		  		if(link_time_ind==-20){
+		  			link_time_ind=20;
+		  		}
+		  		link_time_ind--;
+		  		$(".hlink-ul").css({
+		  			"margin-top": link_time_ind+"px"
+		  		});
+		  	},100);
+		  	
+		  	// 吸顶导航栏显示样式
+		  	$(window).scroll(function(){
+		  		if($(this).scrollTop() > 780){
+		  			$(".side_top_box").show();
+		  		}else{
+		  			$(".side_top_box").hide();
+		  		}
+		  	});
+		  	
+		  	// 购物车数量
+		  	var num=0;
+		  	for(var key in localStorage){
+		  		if(key.match(/\d{9}/g)!=null){
+		  			num++;
+		  		}
+		  		console.log(num)
+		  		$("#shopack>span:last-child").text(num);
+		  		$("#shop_packnum").text(num)
+		  	}
+		</script>
+	</body>
+</html>

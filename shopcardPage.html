@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
+		<link rel="stylesheet" type="text/css" href="css/utils.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goods.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	<body style="background-color: #f6f6f6;">
+		<div class="body">
+			<!--顶部菜单栏-->
+			<div class="topNav">
+				<div class="topNav_position">
+					<div class="navBox">
+						<div class="leftNav">
+							<a href="register.html?=login" id="login">登录</a>
+							<a href="register.html?=register" id="register">免费注册</a>
+							<a id="user_isLogin"></a>
+							<span>|</span>
+							<a href="">我的订单</a>
+							<a href="">商家入驻</a>
+						</div>
+						<div class="rightNav">
+							<a href="" style="position: relative;">商家中心</a>
+							<a href="">客户服务</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			<!--导航栏-->
+			<div class="header_nav">
+				<div class="top_sch">
+					<!--网站标题-->
+					<div class="site_tit isblock">
+						<a href="index.html"></a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="middle_shop">
+				<div class="mid-shop-tit">
+					<div class="shop-info every-left">商品信息</div>
+					<div class="every-left">单价/原价</div>
+					<div class="every-left" style="width: 170px;">数量</div>
+					<div class="every-left" style="width: 215px;">小计</div>
+					<div class="every-left" style="width: 155px;">操作</div>
+				</div>
+				<!-- 店名 -->
+				<!--<div class="goodlist-tit">
+					<img src="img/tag_icon.png">
+					<span>跨店促销</span>
+				</div>-->
+				<!-- 每个商品  -->
+				<!--<div class="goodlist-box">
+					<input type="checkbox" style="width: 15px;height: 15px;"/>
+					<img src="img/test.jpg"/>
+					<div class="goodlist_info">
+						<span>抖音U盘车载工体音乐</span>
+						<p>64G【2400音乐+200MV视频】，金属银色+挂绳+转接头</p>
+					</div>
+					<div class="goodlist_price">
+						<span>¥29.5</span>
+						<i>/ ¥39.5</i>
+					</div>
+					<div class="goodlist_inp">
+						<i id="inp-duc">-</i>
+						<input type="text" id="" value="1" />
+						<i id="inp-add">+</i>
+					</div>
+					<div class="goodlist_total">
+						<span>¥ 29.5</span>
+					</div>
+					<div class="goodlist_del">
+						<i></i>
+					</div>
+				</div>-->
+				
+				<!--结算按钮-->
+				<div class="goodlist_clear">
+					<div class="right-inp">
+						总共
+						<span id="right-inp_num">0</span>
+						件，
+						总额：¥
+						<span id="right-total_price">0</span>
+						,合计(不含运费)
+						<span id="right_total_pay">0</span>
+						<button>去结算</button>
+					</div>
+				</div>
+			</div>
+			
+			<!--网页底部内容-->
+			<div class="home_footer">
+				<div class="home-footer-div clear">
+					<!--二维码div-->
+					<div class="hcode-div isblock clear">
+						<img src="img/newgoods/jp-app-90.png"/>
+						<p>随时逛 及时抢</p>
+					</div>
+					<!--底部导航-->
+					<div class="hfooter-down-div clear">
+						<dl class="hdown-div-dl clear">
+							<dt>获取更新</dt>
+							<dd>
+								<a>
+									<i></i>
+									iPhone/Android
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									卷皮QQ空间
+									
+								</a>
+							</dd>
+							<dd>
+								<a>	
+									<i></i>
+									卷皮新浪微博
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									开放API
+								</a>
+							</dd>
+						</dl>
+						<dl class="down-div-dl  clear">
+							<dt>商务合作</dt>
+							<dd>
+								<a>
+									<i></i>
+									卖家免费报名
+								</a>
+							</dd>
+							<dd>
+								<a href="">
+									<i></i>
+									商家入驻
+								</a>
+							</dd>
+							<dd>
+								<a>	
+									<i></i>
+									廉政邮箱
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									开放平台
+								</a>
+							</dd>
+						</dl>
+						<dl class="down-div-dl  clear">
+							<dt>公司信息</dt>
+							<dd>
+								<a>
+									<i></i>
+									关于卷皮
+								</a>
+							</dd>
+							<dd>
+								<a href="">
+									<i></i>
+									媒体报道
+								</a>
+							</dd>
+						</dl>
+						<dl class="down-div-dl  clear" style="width: 100px;display: inline-block;">
+							<dt>帮助中心</dt>
+							<dd>
+								<a>
+									<i></i>
+									新手上路
+								</a>
+							</dd>
+							<dd>
+								<a>
+									<i></i>
+									网站地图
+								</a>
+							</dd>
+						</dl>
+						<div class="hfooter_phone clear">
+						<div class="hphone-icon clear"></div>
+							<span class="hphone-desc clear">
+								周一至周日
+								<br />
+								9:00-21:00
+							</span>
+							<br />
+							<span id="callp">客服热线：400-0090-869</span>
+						</div>
+					</div>
+					
+					
+					<!--友情链接部分-->
+					<div class="hlink">
+						<span class="hlink-span">友情链接：</span>
+						<div class="hlink-divul">
+							<ul class="hlink-ul">
+								<li>
+									<a href="">九块邮</a>
+									<a href="">易迅优惠券</a>
+									<a href="">中国鲜花礼品网</a>
+									<a href="">钻石小鸟</a>
+									<a href="">箱包品牌</a>
+									<a href="">网上购物</a>
+									<a href="">中国品牌网</a>
+									<a href="">会过VIP</a>
+									<a href="">家居网</a>
+									<a href="">国画</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="hcompany">
+						武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+						<a href="" style="color: #ccc;">鄂公网安备42018502000390号</a>
+						 | 食品流通许可证 SP4201991510041888　　
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			// 验证用户是否登陆
+			function checkLogin(){
+				if(localStorage.getItem("isLogin")!=null){
+					$("#login").hide()
+					$("#register").hide()
+					$("#user_isLogin").text(localStorage.getItem("isLogin"));
+				}
+			}
+			// 用户名显示
+			checkLogin();
+			
+			// 用户所选商品渲染
+			function show_usergoods(callback){
+				var XmlRe = new XMLHttpRequest();
+				XmlRe.open("GET","js/goodsData.json",true);
+				XmlRe.onreadystatechange=function(){
+					if(XmlRe.status==200&&XmlRe.readyState==4){
+						var a = JSON.parse(XmlRe.responseText);
+						callback(a);
+					}
+				}
+				XmlRe.send();
+			}
+			show_usergoods(loaduser_goods);
+			function loaduser_goods(data){
+				data.forEach(function(ele){
+					// 遍历localStorage中用户已经加入购物车的商品
+					for(var key in localStorage){
+						if(key.match(/\d{9}/g)!=null){
+							// console.log(key.match(/\d{9}/g));
+							var extgoods = []; // 商品数组
+							extgoods.push(key.match(/\d{9}/g));
+							//console.log(extgoods.length);
+							for(var i=0; i<extgoods.length; i++){
+								// console.log(JSON.parse(localStorage.getItem(extgoods)).size.toString()) //拿到所选的商品信息
+								// console.log(ele[extgoods]["g-oldprice"])
+								//console.log(key)
+								var kd_div = $("<div>");
+								kd_div.addClass("goodlist-tit");
+								kd_div.append("<img src='img/tag_icon.png'>");
+								kd_div.append("<span>"+ele[extgoods]["g-store_name"]+"</span>");
+								
+								var goods_box = $("<div>"); // 商品盒子
+								goods_box.addClass("goodlist-box");
+								goods_box.attr({'id':key});
+								goods_box.append("<img src="+ele[extgoods]["g-pic"][0].sm_pic+">");
+								
+								var goodsinfo_div = $("<div>");	// 商品信息
+								goodsinfo_div.addClass("goodlist_info")
+								goodsinfo_div.append("<span>"+ele[extgoods]["h-title"]+"</span>");
+								goodsinfo_div.append("<p>"
+								+JSON.parse(localStorage.getItem(extgoods)).color.toString()
+								+", "
+								+JSON.parse(localStorage.getItem(extgoods)).size.toString()
+								+"</p>");
+								
+								var goodspri_div = $("<div>"); // 商品价格
+								goodspri_div.addClass("goodlist_price");
+								goodspri_div.append("<span>¥"+ele[extgoods]["g-nowprice"]+"</span>");
+								goodspri_div.append("<i>"+"/ ¥"+ele[extgoods]["g-oldprice"]+"</i>");
+								
+								var goodsinp_div = $("<div>"); // 商品数量按钮
+								goodsinp_div.addClass("goodlist_inp");
+								goodsinp_div.append("<i class='inp-duc'>-</i>");
+								goodsinp_div.append("<input type='text' value="+JSON.parse(localStorage.getItem(extgoods)).num+">");
+								// console.log()
+								goodsinp_div.append("<i class='inp-add'>+</i>");
+								
+								var goodstotal_div = $("<div>"); // 商品小计
+								goodstotal_div.addClass("goodlist_total");
+								goodstotal_div.append("<span> ¥"+ele[extgoods]["g-nowprice"]*JSON.parse(localStorage.getItem(extgoods)).num+"</span>");
+								
+								var goodsdel_div = $("<div>"); // 删除商品
+								goodsdel_div.addClass("goodlist_del");
+								goodsdel_div.append("<i></i>");
+								
+								goods_box.append(goodsinfo_div);
+								goods_box.append(goodspri_div);
+								goods_box.append(goodsinp_div);
+								goods_box.append(goodstotal_div);
+								goods_box.append(goodsdel_div);
+								console.log()
+							}
+							$(".mid-shop-tit").after(goods_box);
+							$(".mid-shop-tit").after(kd_div);
+							
+							account = Number($("#right-inp_num").text());
+						    a = JSON.parse(localStorage.getItem(extgoods)).num;
+							$("#right-inp_num").html(account+a);
+							
+							var num1 = ele[extgoods]["g-nowprice"]*JSON.parse(localStorage.getItem(extgoods)).num;
+							var num2 = Number($("#right-total_price").text().toString())
+							$("#right-total_price").text(num1+num2);
+							$("#right_total_pay").text(num1+num2)
+						}
+					}
+				});
+			}
+			
+			// 商品减少按钮
+			$(".goodlist_inp>i:first-child").live("click",function(){
+				var account = Number($(this).next().val());
+				if(account==1){
+					account = 1;
+				}else{
+					var nownum = $(this).next().val(--account); // 改变当前输入框里面的值
+				}
+				// 获取当前点击的输入框的盒子的id
+				var a = JSON.parse(localStorage.getItem($(this).parent().parent().attr("id")));
+				// console.log(nownum)
+				a.num = account; // 将当前更改的值更新到localstorage上
+				var infostr = JSON.stringify(a);
+				localStorage.setItem($(this).parent().parent().attr("id"),infostr);
+				console.log(Number($("#right-inp_num").html()));
+				if(Number($("#right-inp_num").html())>3){
+					$("#right-inp_num").html("3")
+				}else{
+					$("#right-inp_num").html(Number($("#right-inp_num").html())-1);
+				}
+				location.href = "shopcardPage.html";
+			});
+			
+			// 商品增加按钮
+			$(".goodlist_inp>i:last-child").live("click",function(){
+				var account = Number($(this).prev().val())
+				$(this).prev().val(++account);
+				// 获取当前点击的输入框的盒子的id
+				var a = JSON.parse(localStorage.getItem($(this).parent().parent().attr("id")));
+				a.num = account; // 将当前更改的值更新到localstorage上
+				var infostr = JSON.stringify(a);
+				localStorage.setItem($(this).parent().parent().attr("id"),infostr);
+				$("#right-inp_num").html(Number($("#right-inp_num").html())+1);
+				location.href = "shopcardPage.html";
+			});
+			
+			// 删除商品
+			$(".goodlist_del>i").live("click",function(){
+				var a = confirm("确认删除该商品吗？");
+				if(a==true){
+					var thisid = $(this).parent().parent().attr("id");
+					localStorage.removeItem(thisid);
+					$(this).parent().parent().prev().remove(); // 店名
+					$(this).parent().parent().remove();	// 该商品
+					location.href = "shopcardPage.html";
+				}
+			});
+		</script>
+	</body>
+</html>

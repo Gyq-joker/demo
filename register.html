@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>免费注册，独享淘宝天猫1折商品-卷皮网</title>
+		<link rel="stylesheet" type="text/css" href="css/jpre.css"/>
+		<link rel="stylesheet" type="text/css" href="css/utils.css"/>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<script src="js/tools.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	
+	<body>
+		<div class="body">
+			<!--顶部内容-->
+			<div class="top_nav">
+				<div class="nav_box">
+					<!--左边图片-->		
+					<div class="nav_left">
+						<a href="index.html"></a>
+					</div>
+					<!--右边图片-->
+					<div class="nav_right"></div>
+				</div>
+			</div>
+			
+			<div class="main">
+				<div class="login_box" style="display: block;">
+					<!--登录标题-->
+					<div class="box_tit">
+						<span>老用户登录</span>
+						<span>/</span>
+						<span>尊敬的卷皮用户，欢迎您回来！</span>
+						<p class="right_regist">
+							<span>还没账号？</span>
+							<a id="regin_a">立即去注册</a>
+						</p>
+					</div>
+					<!--登录主体-->
+					<div class="box_left">
+						<!--信息输入-->
+						<div class="left_info">
+							<form action="" method="get">
+								
+								<div class="first_use">
+									<i></i>
+									<input id="use_phone" type="text" class="use_info" placeholder="手机号"/>
+								</div>
+								
+								<div class="first_pass">
+									<i></i>
+									<input id="use_pass" type="password" class="pass_info" placeholder="密码"/>
+								</div>
+								
+								<div class="check_box">
+									<input type="checkbox" name="chebox" checked="true"/>
+									两周内免登录
+									<a href="" class="forget_info">忘记密码？</a>
+								</div>
+								
+								<input class="getbtn" type="button" name="logbtn" value="登录"/>
+								
+								<div class="udown_info">
+									<div class="toge_info">
+										<p>合作网站账号登录</p>
+										<a class="wet"></a>
+										<a class="webo"></a>
+										<a class="ticon"></a>
+									</div>
+									<div class="phone_box">
+										<i></i>
+										<a>手机快捷登录>></a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--右侧图片-->
+						<div class="right_img">
+							<img src="img/login-bj-ad.png"/>
+						</div>
+					</div>
+				</div>
+				
+				<div class="login_box1">
+					<!--登录标题-->
+					<div class="box_tit">
+						<span>新用户注册</span>
+						<span>/</span>
+						<span>注册卷皮网，赢积分换好礼！</span>
+						<p class="right_regist">
+							<span>已有账号，</span>
+							<a href="register.html?=login" id="regin_a">立即登录</a>
+						</p>
+					</div>
+					<!--登录主体-->
+					<div class="box_left1">
+						<!--信息输入-->
+						<div class="left_info">
+							<form action="" method="get">
+								
+								<div class="first_use">
+									<span>手机号码:</span>
+									<input type="text" class="use_info1" placeholder="用户名"/>
+								</div>
+								
+								<div class="first_pass">
+									<span>创建密码:</span>
+									<input type="password" class="pass_info1" placeholder="创建密码(6~12位数字和字母的组合)"/>
+								</div>
+								
+								<div class="first_pass">
+									<span>确认密码:</span>
+									<input type="password" class="pass_info1" placeholder="确认密码"/>
+								</div>
+								
+								<div class="first_pass1">
+									<span style="margin-right: 0;">验证码:</span>
+									<input type="text" class="pass_info1" placeholder="输入验证码"/>
+									<input id="checkNum" value="获取验证码">
+									<span id="showcheck"></span>
+								</div>
+								
+								<!--<div class="check_box">
+									<input type="checkbox" name="chebox" checked="true"/>
+									两周内免登录
+									<a href="" class="forget_info">忘记密码？</a>
+								</div>-->
+								
+								<input class="getbtn1" type="button" name="logbtn" value="立即注册"/>
+								
+								<div class="udown_info new_info">
+									<input type="checkbox" checked="true" id="checkbox_num"/>
+									<span>我已阅读并接受《卷皮用户协议》</span>
+								</div>
+							</form>
+						</div>
+						<!--右侧图片-->
+						<div class="right_img">
+							<img src="img/login-bj-ad.png"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			var changePage = location.href.match(/=\w{5,8}/g);
+			var loginbox = document.getElementsByClassName('login_box')[0];
+			var loginbox1 = document.getElementsByClassName('login_box1')[0];
+			console.log(changePage);
+			if(changePage=="=login"){
+				loginbox.style.display = "block";
+				loginbox1.style.display = "none";
+			}else{
+				loginbox.style.display = "none";
+				loginbox1.style.display = "block";
+			}
+			var ph_num = document.getElementsByClassName('use_info1')[0];
+			var getbtn1 = document.getElementsByClassName('getbtn1')[0];
+			
+			var Exta; // 手机号
+			var EXtb; // 密码
+			var Extc; // 验证码
+			ph_num.addEventListener('change',getphone);
+			function getphone(){
+				var str = ph_num.value;
+				var reg = /^((13[0-9])|(14[0-9])|(15[0-9])|(17[0-9])|(18[0-9]))\d{8}$/g;
+				var res = str.match(reg);
+				if(res!=null){
+					Exta  = res;
+				}else{
+					ph_num.style = "border-color: red;color: red";
+					ph_num.value = "请输入有效的手机号！"
+					setTimeout(function(){
+						ph_num.style = "color: block;border-color:'' ";
+						ph_num.value = "";
+					},1000);
+					return false;
+				}
+			}
+			
+			var pass_num1 = document.getElementsByClassName('pass_info1')[0];
+			pass_num1.addEventListener('change',checknewPass);
+			function checknewPass(){
+				var str = pass_num1.value;
+				var reg = /^(?!\d*$)(?![a-zA-Z]*$)[0-9a-zA-Z]{6,12}$/g;
+				var res = str.match(reg);
+				if(res!=null){
+					Extb = res;
+				}else{
+					pass_num1.type = "text";
+					pass_num1.style = "border-color: red;color: red";
+					pass_num1.value = "密码输入有误！";
+					setTimeout(function(){
+						pass_num1.style = "color: 'block';border-color: ''";
+						pass_num1.type = "password";
+						pass_num1.value = "";
+					},1000); 
+					return false;
+				}
+			}
+			
+			var pass_num2 = document.getElementsByClassName('pass_info1')[1];
+			pass_num2.addEventListener("change",again);
+			function again(){
+				if(pass_num1.value!=pass_num2.value){
+					pass_num1.type = "text";
+					pass_num2.type = "text";
+					pass_num1.style = "border-color: red;color: red";
+					pass_num1.value = "两次输入的不一致！";
+					pass_num2.style = "border-color: red;color: red";
+					pass_num2.value = "两次输入的不一致！";
+					setTimeout(function(){
+						pass_num1.type = "password";
+						pass_num2.type = "password";
+						pass_num1.style = "color: 'block';border-color: ''";
+						pass_num1.value = "";
+						pass_num2.style = "color: 'block';border-color: ''";
+						pass_num2.value = "";
+					},1000); 
+					return false;
+				}
+			}
+			
+			var pass_num3 = document.getElementsByClassName('pass_info1')[2];
+			var checknum = document.getElementById('checkNum');
+			var showcheck = document.getElementById('showcheck');
+			checknum.addEventListener('click',getNum);
+			function getNum(){
+				var anynum = Math.round(Math.random()*8999+1000);
+				showcheck.innerHTML = anynum;
+				showcheck.style.display = "inline-block";
+				return false;
+			}
+			pass_num3.addEventListener('change',isTrue);
+			function isTrue(){
+				if(pass_num3.value==showcheck.innerHTML){
+					pass_num3.style.borderColor = "greenyellow";
+					Extc = true;
+					setTimeout(function(){
+						pass_num3.style.borderColor = "";
+					},1500);
+				}else{
+					pass_num3.style.color = "red";
+					pass_num3.style.borderColor = "red";
+					pass_num3.value = "验证码输入错误";
+					setTimeout(function(){
+						pass_num3.value = "";
+						pass_num3.style.color = "";
+						pass_num3.style.borderColor = "";
+					},1500);
+				}
+			}
+			
+			var checkbox_num = document.getElementById('checkbox_num');
+			checkbox_num.addEventListener('change',disable_btn);
+			function disable_btn(){
+				if(checkbox_num.checked){
+					getbtn1.disabled = false;
+					getbtn1.style = "";
+					
+					
+				}else{
+					getbtn1.disabled = true;
+					getbtn1.style = "background-color: #666"
+				}
+			}
+			getbtn1.addEventListener('click',register);
+			function register(){
+				
+				if(Exta&&Extb&&Extc){
+					Cookie.set(Exta,Extb,2);
+					alert("注册成功！可以去登录啦！");
+					loginbox.style.display = "block";
+					loginbox1.style.display = "none";
+				}else{
+					alert("注册失败！");
+				}
+			}
+			var regina = document.getElementById('regin_a');
+			regina.addEventListener('click',gotoregin);
+			function gotoregin(){
+				loginbox.style.display = "none";
+				loginbox1.style.display = "block";
+			}
+			
+			var use_ph = document.getElementById('use_phone');
+			var use_pa = document.getElementById('use_pass');
+			var loginbtn = document.getElementsByClassName('getbtn')[0];
+			loginbtn.addEventListener('click',login);
+			function login(){
+				if(Cookie.has(use_ph.value)&&Cookie.get(use_ph.value)==use_pa.value){
+					alert("登录成功！");
+					localStorage.setItem("isLogin","jp_"+use_ph.value);
+					location.href = "index.html";
+				}else{
+					use_pa.value = ""
+					use_ph.value = ""
+					alert("用户名或密码有误或不存在！");
+				}
+			}
+		</script>
+	</body>
+</html>
